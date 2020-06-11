@@ -26,9 +26,9 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
          node-version: 12    
-    -name: Install Surge
-     run: npm install -g surge   
-    -name: Run Surge
-     run: surge ./firstwebapp.surge.sh --token ${{secrets.Surge_Token}}
+    - name: Install Surge
+      run: npm install -g surge   
+    - name: Run Surge
+      run: surge ./firstwebapp.surge.sh --token ${{secrets.Surge_Token}}
       
 
